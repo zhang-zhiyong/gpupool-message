@@ -1,0 +1,14 @@
+
+1、Mavell Arm服务器
+	ssh -X root@192.168.101.136
+	cd  /root/vx/liuwei/spp/gpupool
+	source /root/vx/liuwei/testscripts/start_vm.sh 7 192.168.1.7 8082 lwei7 lwei7 5067 10061 2
+
+
+2、进入GPUPOOL
+	ssh -X root@192.168.101.141
+	cd /home/vgtp-x/liuwei/spp/gpupool
+	sh run.sh dump 0 0
+
+3、进入华为服务器
+	ssh -X root@192.168.101.137
