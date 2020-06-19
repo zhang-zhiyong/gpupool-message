@@ -4,6 +4,7 @@
 	cd  /root/vx/liuwei/spp/gpupool
 	source /root/vx/liuwei/testscripts/start_vm.sh 7 192.168.1.7 8082 lwei7 lwei7 5067 10061 2
 
+	scp -r /media/zhangyang/zhangzhiyong/aic_img/ root@192.168.101.136:/root/vx/android/zhangzhiyong/
 
 2、进入GPUPOOL
 	ssh -X root@192.168.101.141
