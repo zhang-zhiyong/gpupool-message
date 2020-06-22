@@ -13,3 +13,5 @@
 
 3、进入华为服务器
 	ssh -X root@192.168.101.137
+     cd /home/vgtp-x/liuwei/spp/gpupool/
+	./start-android_lzz.sh 8 192.168.1.7 8082 lwei8 lwei8 5068 10071 2
