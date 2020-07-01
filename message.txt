@@ -15,3 +15,18 @@
 	ssh -X root@192.168.101.137
      cd /home/vgtp-x/liuwei/spp/gpupool/
 	./start-android_lzz.sh 8 192.168.1.7 8082 lwei8 lwei8 5068 10071 2
+
+
+
+4新更新命令行
+	gpupool
+		ssh -X root@192.168.101.141
+		cd /home/vgtp-x/liuwei/0630/gpupool
+		sh run.sh dump 0 0
+	Mavell
+		ssh -X root@192.168.101.136
+		cd /root/vx
+		source setenv.sh
+		cd /root/vx/liuwei/0630/gpupool
+		./start-android.sh 17 192.168.1.7 8085 lwei17 lwei17 5077 10161 4
+		
