@@ -1,14 +1,9 @@
-
-1、Mavell Arm服务器
-	ssh -X root@192.168.101.136
-	cd  /root/vx/liuwei/spp/gpupool
-	source /root/vx/liuwei/testscripts/start_vm.sh 7 192.168.1.7 8082 lwei7 lwei7 5067 10061 2
-
-	scp -r /media/zhangyang/zhangzhiyong/aic_img/ root@192.168.101.136:/root/vx/android/zhangzhiyong/
-
+1、//scp 文件拷贝
+	scp -r /media/zhangyang/zhangzhiyong/aic_img/ root@192.168.101.136:/root/vx/zhangzhiyong/A16
+	scp  /media/zhangyang/zhangzhiyong/aic_img/Image root@192.168.101.136:/root/vx/zhangzhiyong/A16
 2、进入GPUPOOL
 	ssh -X root@192.168.101.141
-	cd /home/vgtp-x/liuwei/spp/gpupool
+	cd /home/vgtp-x/liuwei/0706/gpupool
 	sh run.sh dump 0 0
 
 3、进入华为服务器
@@ -16,17 +11,10 @@
      cd /home/vgtp-x/liuwei/spp/gpupool/
 	./start-android_lzz.sh 8 192.168.1.7 8082 lwei8 lwei8 5068 10071 2
 
-
-
-4新更新命令行
-	gpupool
-		ssh -X root@192.168.101.141
-		cd /home/vgtp-x/liuwei/0630/gpupool
-		sh run.sh dump 0 0
-	Mavell
-		ssh -X root@192.168.101.136
-		cd /root/vx
-		source setenv.sh
-		cd /root/vx/liuwei/0630/gpupool
-		./start-android.sh 17 192.168.1.7 8085 lwei17 lwei17 5077 10161 4
+4、进入Mavell服务器
+	ssh -X root@192.168.101.136
+	cd /root/vx
+	source setenv.sh
+	cd /root/vx/zhangzhiyong/gpupool/
+	./start-android1080x1920.sh 16 192.168.1.7 8083 lwei16 lwei16 5068 10071 3
 		
